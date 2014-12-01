@@ -63,7 +63,4 @@
 //This method is called when after the color picker selects a color
 - (void)colorPicker:(JAColorPicker *)colorPicker didSelectColor:(UIColor *)selection;
 
-//This method is called when the color picker is disabled through double-touch. (cancelled).
-- (void)colorPickerSelectionWasCancelled:(JAColorPicker *)colorPicker;
-
 @end
