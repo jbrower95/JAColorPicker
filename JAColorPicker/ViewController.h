@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "JAColorPicker.h"
+@interface ViewController : UIViewController <JAColorPickerDelegate> {
+    
+    JAColorPicker *colorPicker;
+    JAColorPicker *colorPickerTwo;
+    UIView *previewView;
+    
+}
+@property (strong, nonatomic) JAColorPicker *colorPicker;
 
 @end
 

@@ -14,6 +14,13 @@
 		D0C228381A2BA99D00A1AC1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C228371A2BA99D00A1AC1B /* Images.xcassets */; };
 		D0C2283B1A2BA99D00A1AC1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C228391A2BA99D00A1AC1B /* LaunchScreen.xib */; };
 		D0C228471A2BA99D00A1AC1B /* JAColorPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C228461A2BA99D00A1AC1B /* JAColorPickerTests.m */; };
+		D0C228561A2BAA0E00A1AC1B /* JAColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C228551A2BAA0E00A1AC1B /* JAColorPicker.m */; };
+		D0C228591A2BB25500A1AC1B /* UIImageView+Pixel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C228581A2BB25500A1AC1B /* UIImageView+Pixel.m */; };
+		D0C2285B1A2BB81300A1AC1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C2285A1A2BB81300A1AC1B /* QuartzCore.framework */; };
+		D0C2285D1A2BCC4500A1AC1B /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C2285C1A2BCC4500A1AC1B /* colormap.png */; };
+		D0C2285F1A2BD0AD00A1AC1B /* map-saturation.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C2285E1A2BD0AD00A1AC1B /* map-saturation.png */; };
+		D0C228611A2BD9A400A1AC1B /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C228601A2BD9A400A1AC1B /* red.png */; };
+		D0C228631A2BE08D00A1AC1B /* multiplechoices.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0C228621A2BE08D00A1AC1B /* multiplechoices.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,15 @@
 		D0C228401A2BA99D00A1AC1B /* JAColorPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAColorPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C228451A2BA99D00A1AC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0C228461A2BA99D00A1AC1B /* JAColorPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAColorPickerTests.m; sourceTree = "<group>"; };
+		D0C228541A2BAA0E00A1AC1B /* JAColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAColorPicker.h; sourceTree = "<group>"; };
+		D0C228551A2BAA0E00A1AC1B /* JAColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAColorPicker.m; sourceTree = "<group>"; };
+		D0C228571A2BB25500A1AC1B /* UIImageView+Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Pixel.h"; sourceTree = "<group>"; };
+		D0C228581A2BB25500A1AC1B /* UIImageView+Pixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Pixel.m"; sourceTree = "<group>"; };
+		D0C2285A1A2BB81300A1AC1B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D0C2285C1A2BCC4500A1AC1B /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colormap.png; path = ../../../Desktop/colormap.png; sourceTree = "<group>"; };
+		D0C2285E1A2BD0AD00A1AC1B /* map-saturation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-saturation.png"; path = "../map-saturation.png"; sourceTree = "<group>"; };
+		D0C228601A2BD9A400A1AC1B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		D0C228621A2BE08D00A1AC1B /* multiplechoices.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = multiplechoices.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C2285B1A2BB81300A1AC1B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +80,9 @@
 		D0C2281E1A2BA99C00A1AC1B = {
 			isa = PBXGroup;
 			children = (
-				D0C228291A2BA99D00A1AC1B /* JAColorPicker */,
+				D0C2285A1A2BB81300A1AC1B /* QuartzCore.framework */,
+				D0C228501A2BA9A300A1AC1B /* JAColorPickerLibrary */,
+				D0C228291A2BA99D00A1AC1B /* JAColorPickerExample */,
 				D0C228431A2BA99D00A1AC1B /* JAColorPickerTests */,
 				D0C228281A2BA99D00A1AC1B /* Products */,
 			);
@@ -78,11 +97,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0C228291A2BA99D00A1AC1B /* JAColorPicker */ = {
+		D0C228291A2BA99D00A1AC1B /* JAColorPickerExample */ = {
 			isa = PBXGroup;
 			children = (
 				D0C2282E1A2BA99D00A1AC1B /* AppDelegate.h */,
 				D0C2282F1A2BA99D00A1AC1B /* AppDelegate.m */,
+				D0C228601A2BD9A400A1AC1B /* red.png */,
+				D0C2285E1A2BD0AD00A1AC1B /* map-saturation.png */,
+				D0C228621A2BE08D00A1AC1B /* multiplechoices.jpg */,
+				D0C2285C1A2BCC4500A1AC1B /* colormap.png */,
 				D0C228311A2BA99D00A1AC1B /* ViewController.h */,
 				D0C228321A2BA99D00A1AC1B /* ViewController.m */,
 				D0C228341A2BA99D00A1AC1B /* Main.storyboard */,
@@ -90,6 +113,7 @@
 				D0C228391A2BA99D00A1AC1B /* LaunchScreen.xib */,
 				D0C2282A1A2BA99D00A1AC1B /* Supporting Files */,
 			);
+			name = JAColorPickerExample;
 			path = JAColorPicker;
 			sourceTree = "<group>";
 		};
@@ -117,6 +141,17 @@
 				D0C228451A2BA99D00A1AC1B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0C228501A2BA9A300A1AC1B /* JAColorPickerLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D0C228541A2BAA0E00A1AC1B /* JAColorPicker.h */,
+				D0C228551A2BAA0E00A1AC1B /* JAColorPicker.m */,
+				D0C228571A2BB25500A1AC1B /* UIImageView+Pixel.h */,
+				D0C228581A2BB25500A1AC1B /* UIImageView+Pixel.m */,
+			);
+			name = JAColorPickerLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +234,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C2285D1A2BCC4500A1AC1B /* colormap.png in Resources */,
 				D0C228361A2BA99D00A1AC1B /* Main.storyboard in Resources */,
 				D0C2283B1A2BA99D00A1AC1B /* LaunchScreen.xib in Resources */,
+				D0C228611A2BD9A400A1AC1B /* red.png in Resources */,
 				D0C228381A2BA99D00A1AC1B /* Images.xcassets in Resources */,
+				D0C228631A2BE08D00A1AC1B /* multiplechoices.jpg in Resources */,
+				D0C2285F1A2BD0AD00A1AC1B /* map-saturation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +260,8 @@
 			files = (
 				D0C228331A2BA99D00A1AC1B /* ViewController.m in Sources */,
 				D0C228301A2BA99D00A1AC1B /* AppDelegate.m in Sources */,
+				D0C228561A2BAA0E00A1AC1B /* JAColorPicker.m in Sources */,
+				D0C228591A2BB25500A1AC1B /* UIImageView+Pixel.m in Sources */,
 				D0C2282D1A2BA99D00A1AC1B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
