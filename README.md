@@ -44,10 +44,10 @@ Sample Initialization:
 If you want to receive callbacks, you must conform to the JAColorPickerDelegate Protocol. It's got one method that tells you when you've received a color.
 
 ViewController.m
-    - (void)colorPicker:(JAColorPicker *)picker didSelectColor:(UIColor *)color {
+      - (void)colorPicker:(JAColorPicker *)picker didSelectColor:(UIColor *)color {
         //do something with 'color'
         NSLog(@"We received a color!");
-    }
+      }
     
 Included are two images. I don't own them, but you can feel free to make your own images during distribution.
 
